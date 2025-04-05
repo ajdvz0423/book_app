@@ -1,0 +1,92 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Arial', sans-serif;
+  background-color: #E8ECF8;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 100%; 
+  max-width: 1200px;
+  margin: auto; 
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  border: 1px solid #ccc;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.left-container,
+.right-container {
+  flex: 1;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-container {
+  background-image: url("assets/blue_bg.jpg");
+  background-size: cover;
+  gap: .3rem;
+  background-position: center;
+  color: #FFFFFF;
+}
+
+.left-container h1 {
+  font-size: 2.5rem;
+  letter-spacing: 10px;
+  margin-bottom: 1rem;
+}
+
+.right-container {
+  padding: 1rem;
+  gap: 1rem;
+}
+
+form {
+  width: 100%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 40px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.login-btn, .register-btn {
+  padding: 10px 20px;
+  background-color: #097FF5;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+select{
+  position: relative;
+  min-width: 200px;
+  padding: 7px 40px 7px 12px;
+  width: 100%;
+  border: 1px solid #E8EAED;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 1px 3px -2px #9098A9;
+  cursor: pointer;
+}
